@@ -65,7 +65,6 @@ String? name;
 int total = 500;
 int? amount;
 Map<String, int> account = {};
-List<dynamic> bankrecord = [];
 int nums() {
   stdout.write('Enter the number');
   int a = int.parse(stdin.readLineSync()!);
@@ -73,6 +72,7 @@ int nums() {
 }
 
 void createaccount() {
+  total = 500;
   stdout.write('Enter the name of account');
   name = stdin.readLineSync()!;
 }
